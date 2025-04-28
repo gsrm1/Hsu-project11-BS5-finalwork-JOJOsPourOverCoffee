@@ -1,0 +1,57 @@
+.linkStretched {
+  text-decoration: none;
+
+  .imageChange {
+    width: auto;
+    height: 424px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("/images/making coffee while camping.png");
+  }
+
+  .imageChange2 {
+    width: auto;
+    height: 424px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("/images/hario V60 hand brewing method.png");
+  }
+
+  .imageChange3 {
+    width: auto;
+    height: 424px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("/images/coffee Brewing Notebook.png");
+  }
+
+  &:hover {
+    .cardShadow_hover {
+      box-shadow: 0rem .3rem .5rem .3rem rgba($black, .15) !important;
+      transition: .3s;
+    }
+
+    .imageChange_hover {
+      background-image: url("/images/making coffee while camping2.png");
+      transition: .3s;
+    }
+
+    .imageChange2_hover {
+      background-image: url("/images/hario V60 hand brewing method2.png");
+      transition: .3s;
+    }
+
+    .imageChange3_hover {
+      background-image: url("/images/coffee Brewing Notebook2.png");
+      transition: .3s;
+    }
+
+    .textMore_hover {
+      color: $primary;
+      transition: .3s;
+    }
+  }
+}

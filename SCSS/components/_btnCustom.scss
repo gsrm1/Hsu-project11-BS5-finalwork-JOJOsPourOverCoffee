@@ -1,0 +1,29 @@
+.btnCustom {
+  font-size: 20px;
+  line-height: 44px;
+  text-align: center;
+  height: 44px;
+  color: $secondary;
+  border-color: $primary;
+  border: 1px solid $primary;
+  background-color: $primary;
+  border-radius: 50rem;
+  text-decoration: none;
+
+  &_hover {
+    font-size: 20px;
+    line-height: 44px;
+    text-align: center;
+    height: 44px;
+    color: $secondary;
+    background-color: #fff;
+    border: 1px solid $secondary;
+    border-radius: 50rem;
+    text-decoration: none;
+
+    &:hover {
+      border-color: $primary;
+      background-color: $primary;
+    }
+  }
+}

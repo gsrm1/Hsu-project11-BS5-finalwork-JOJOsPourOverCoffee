@@ -1,0 +1,30 @@
+.header {
+  max-width: 1440px;
+  height: 810px;
+  margin-top: 88px;
+  margin: 0 auto;
+  background-image: url(/images/home.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.2;
+  }
+
+  @media (max-width: 991px) {
+    height: 635px;
+    background-size: cover;
+    background-image: url(/images/home-mobile.jpg);
+
+    &::after {
+      display: none;
+    }
+  }
+}
