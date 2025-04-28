@@ -13773,7 +13773,7 @@ textarea.form-control-lg {
   height: 810px;
   margin-top: 88px;
   margin: 0 auto;
-  background-image: url(/images/home.png);
+  background-image: url(../../images/home.png);
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
@@ -13791,7 +13791,7 @@ textarea.form-control-lg {
   .header {
     height: 635px;
     background-size: cover;
-    background-image: url(/images/home-mobile.jpg);
+    background-image: url(../../images/home-mobile.jpg);
   }
   .header::after {
     display: none;
@@ -13911,7 +13911,7 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-image: url("/images/making coffee while camping.png");
+  background-image: url("../../images/making coffee while camping.png");
 }
 .linkStretched .imageChange2 {
   width: auto;
@@ -13919,7 +13919,7 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-image: url("/images/hario V60 hand brewing method.png");
+  background-image: url("../../images/hario V60 hand brewing method.png");
 }
 .linkStretched .imageChange3 {
   width: auto;
@@ -13927,7 +13927,7 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-image: url("/images/coffee Brewing Notebook.png");
+  background-image: url("../../images/coffee Brewing Notebook.png");
 }
 .linkStretched:hover .cardShadow_hover {
   -webkit-box-shadow: 0rem 0.3rem 0.5rem 0.3rem rgba(0, 0, 0, 0.15) !important;
@@ -13936,17 +13936,17 @@ textarea.form-control-lg {
   transition: 0.3s;
 }
 .linkStretched:hover .imageChange_hover {
-  background-image: url("/images/making coffee while camping2.png");
+  background-image: url("../../images/making coffee while camping2.png");
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .linkStretched:hover .imageChange2_hover {
-  background-image: url("/images/hario V60 hand brewing method2.png");
+  background-image: url("../../images/hario V60 hand brewing method2.png");
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .linkStretched:hover .imageChange3_hover {
-  background-image: url("/images/coffee Brewing Notebook2.png");
+  background-image: url("../../images/coffee Brewing Notebook2.png");
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
