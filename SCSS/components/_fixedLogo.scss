@@ -5,12 +5,12 @@
   z-index: 100;
   width: 150px;
   height: 150px;
-  background-image: url(../../images/fixedLogo.png);
+  background-image: url("../images/fixedLogo.png");
 
   &:hover {
     width: 150px;
     height: 150px;
     cursor: pointer;
-    background-image: url(../../images/fixedLogo_hover.png);
+    background-image: url("../images/fixedLogo_hover.png");
   }
 }

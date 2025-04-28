@@ -2,7 +2,7 @@
     width: 120px;
     height: 52px;
     border-radius: 5px;
-    background-image: url(../../images/logo.png);
+    background-image: url("../images/logo.png");
     //圖片取代h1文字
     display: block;
     text-indent: 101%;
@@ -12,7 +12,7 @@
     @media (max-width: 991px) {
         width: 95px;
         height: 41px;
-        background-image: url(../../images/logo-mobile.png);
+        background-image: url("../images/logo-mobile.png");
 
     }
 }
