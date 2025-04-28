@@ -3,7 +3,7 @@
   height: 810px;
   margin-top: 88px;
   margin: 0 auto;
-  background-image: url("../images/home.png");
+  background-image: url("../../images/home.png");
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
@@ -21,7 +21,7 @@
   @media (max-width: 991px) {
     height: 635px;
     background-size: cover;
-    background-image: url("../images/home-mobile.jpg");
+    background-image: url("../../images/home-mobile.jpg");
 
     &::after {
       display: none;

@@ -13754,7 +13754,7 @@ textarea.form-control-lg {
   width: 120px;
   height: 52px;
   border-radius: 5px;
-  background-image: url("../images/logo.png");
+  background-image: url("../../images/logo.png");
   display: block;
   text-indent: 101%;
   overflow: hidden;
@@ -13764,7 +13764,7 @@ textarea.form-control-lg {
   .logo {
     width: 95px;
     height: 41px;
-    background-image: url("../images/logo-mobile.png");
+    background-image: url("../../images/logo-mobile.png");
   }
 }
 
@@ -13773,7 +13773,7 @@ textarea.form-control-lg {
   height: 810px;
   margin-top: 88px;
   margin: 0 auto;
-  background-image: url("../images/home.png");
+  background-image: url("../../images/home.png");
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
@@ -13791,7 +13791,7 @@ textarea.form-control-lg {
   .header {
     height: 635px;
     background-size: cover;
-    background-image: url("../images/home-mobile.jpg");
+    background-image: url("../../images/home-mobile.jpg");
   }
   .header::after {
     display: none;
@@ -13805,13 +13805,13 @@ textarea.form-control-lg {
   z-index: 100;
   width: 150px;
   height: 150px;
-  background-image: url("../images/fixedLogo.png");
+  background-image: url("../../images/fixedLogo.png");
 }
 .fixedLogo:hover {
   width: 150px;
   height: 150px;
   cursor: pointer;
-  background-image: url("../images/fixedLogo_hover.png");
+  background-image: url("../../images/fixedLogo_hover.png");
 }
 
 .kalamBold {
@@ -13911,7 +13911,7 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-image: url("/images/making coffee while camping.png");
+  background-image: url("../../images/making coffee while camping.png");
 }
 .linkStretched .imageChange2 {
   width: auto;
@@ -13919,7 +13919,7 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-image: url("../images/hario V60 hand brewing method.png");
+  background-image: url("../../images/hario V60 hand brewing method.png");
 }
 .linkStretched .imageChange3 {
   width: auto;
@@ -13936,17 +13936,17 @@ textarea.form-control-lg {
   transition: 0.3s;
 }
 .linkStretched:hover .imageChange_hover {
-  background-image: url("../images/making coffee while camping2.png");
+  background-image: url("../../images/making coffee while camping2.png");
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .linkStretched:hover .imageChange2_hover {
-  background-image: url("../images/hario V60 hand brewing method2.png");
+  background-image: url("../../images/hario V60 hand brewing method2.png");
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .linkStretched:hover .imageChange3_hover {
-  background-image: url("../images/coffee Brewing Notebook2.png");
+  background-image: url("../../images/coffee Brewing Notebook2.png");
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
