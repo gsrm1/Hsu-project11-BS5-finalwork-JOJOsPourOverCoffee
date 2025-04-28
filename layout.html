@@ -120,8 +120,9 @@
               <div class="card-img-top imageChange imageChange_hover"></div>
               <div class="card-body">
                 <h5 class="card-title fs-6 fw-bold text-truncate">露營沖咖啡使樂趣加倍</h5>
-                <p class="card-text card-textTruncate">This is a wider card with supporting text b.his is a wider card
-                  with supportinghis is a spanpan wider card with supporting</p>
+                <p class="card-text card-textTruncate">文案構思中... This is a card with supporting text below as a natural
+                  lead-in to additional content. This card has even longer content than the first to show that equal
+                  height action.</p>
               </div>
               <div class="card-footer bg-white text-center textMore_hover">
                 <small class="kalamBold">MORE</small>
@@ -135,8 +136,9 @@
               <div class="card-img-top imageChange2 imageChange2_hover"></div>
               <div class="card-body">
                 <h5 class="card-title fs-6 fw-bold text-truncate">掌握最熱門的Hario V60手沖法</h5>
-                <p class="card-text card-textTruncate">This card has supporting text below as a
-                  natural lead-in to additional content.</p>
+                <p class="card-text card-textTruncate">文案構思中... This is a card with supporting text below as a natural
+                  lead-in to additional content. This card has even longer content than the first to show that equal
+                  height action.</p>
               </div>
               <div class="card-footer bg-white text-center textMore_hover">
                 <small class="kalamBold">MORE</small>
@@ -150,7 +152,7 @@
               <div class="card-img-top imageChange3 imageChange3_hover"></div>
               <div class="card-body">
                 <h5 class="card-title fs-6 fw-bold text-truncate">進一步鑽研：瞭解萃取率、金杯理論、咖啡產地、精品咖啡知識等...</h5>
-                <p class="card-text card-textTruncate">This is a wider card with supporting text below as a natural
+                <p class="card-text card-textTruncate">文案構思中... This is a card with supporting text below as a natural
                   lead-in to additional content. This card has even longer content than the first to show that equal
                   height action.</p>
               </div>
@@ -196,22 +198,21 @@
 
 
 
-
-
-
-
-
-
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
     crossorigin="anonymous"></script>
-  <script>
-    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-  </script>
 
   <script>
+    // BS5 tooltip
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+    // a-link disabled
+    const aLink = document.querySelectorAll('a')
+    aLink.forEach((i) => i.addEventListener('click', (e) => e.preventDefault()))
+  </script>
+
+  <!-- <script>
     // 進入前保存 scroll 位置
     window.addEventListener('beforeunload', () => {
       localStorage.setItem('scrollY', window.scrollY);
@@ -224,7 +225,7 @@
         window.scrollTo(0, parseInt(scrollY, 10));
       }
     });
-  </script>
+  </script> -->
 
 </body>
 
