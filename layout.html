@@ -250,16 +250,16 @@
     aLink.forEach((i) => i.addEventListener('click', (e) => e.preventDefault()))
 
     // html修改後保持live server瀏覽位置
-    window.addEventListener('beforeunload', () => {
-      localStorage.setItem('scrollY', window.scrollY);
-    });
+    // window.addEventListener('beforeunload', () => {
+    //   localStorage.setItem('scrollY', window.scrollY);
+    // });
 
-    window.addEventListener('load', () => {
-      const scrollY = localStorage.getItem('scrollY');
-      if (scrollY !== null) {
-        window.scrollTo(0, parseInt(scrollY, 10));
-      }
-    });
+    // window.addEventListener('load', () => {
+    //   const scrollY = localStorage.getItem('scrollY');
+    //   if (scrollY !== null) {
+    //     window.scrollTo(0, parseInt(scrollY, 10));
+    //   }
+    // });
   </script>
 </body>
 
