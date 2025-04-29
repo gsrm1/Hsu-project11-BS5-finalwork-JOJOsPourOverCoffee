@@ -80,6 +80,7 @@
     </div>
   </header>
 
+  <!-- section1 -->
   <section class="mb-6">
     <div class="container">
       <div class="row justify-content-center flex-lg-row-reverse">
@@ -99,35 +100,52 @@
         </div>
       </div>
     </div>
-
   </section>
 
+  <!-- section2 -->
   <section class="mb-6">
     <div class="container">
       <div class="text-center mb-4">
         <img src="./images/whyDrinkCafe.png" alt="Hand-pour coffee maker" class="rounded-3 img-fluid">
       </div>
       <div class="row g-4 text-center">
-        <div class="col-6 col-lg-3"><img src="./images/424-1.png" alt="" class="img-fluid rounded-4">
+        <div class="col-6 col-lg-3">
+          <div class="position-relative">
+            <img src="./images/424-1.png" class="img-fluid rounded-4" alt="a person is drinking coffee">
+            <div class="img-overlay fs-3">Engineer "Ben"</div>
+          </div>
           <h3 class="fs-5">適飲降全因死亡率</h3>
         </div>
-        <div class="col-6 col-lg-3"><img src="./images/424-2.png" alt="" class="img-fluid rounded-4">
+        <div class="col-6 col-lg-3">
+          <div class="position-relative">
+            <img src="./images/424-2.png" class="img-fluid rounded-4" alt="a person is drinking coffee">
+            <div class="img-overlay fs-3">Teacher "Jane"</div>
+          </div>
           <h3 class="fs-5">來一杯提神又醒腦</h3>
         </div>
-        <div class="col-6 col-lg-3"><img src="./images/424-3.png" alt="" class="img-fluid rounded-4">
+        <div class="col-6 col-lg-3">
+          <div class="position-relative">
+            <img src="./images/424-3.png" class="img-fluid rounded-4" alt="a cup of coffee and a coffee plant">
+            <div class="img-overlay fs-3">"Chlorogenic acid"</div>
+          </div>
           <h3 class="fs-5">天然綠原酸好健康</h3>
         </div>
-        <div class="col-6 col-lg-3"><img src="./images/424-4.png" alt="" class="img-fluid rounded-4">
+        <div class="col-6 col-lg-3">
+          <div class="position-relative">
+            <img src="./images/424-4.png" alt="" class="img-fluid rounded-4">
+            <div class="img-overlay fs-3">OL "Elsa"</div>
+          </div>
           <h3 class="fs-5">小確幸從手沖開始</h3>
         </div>
-      </div>
-      <div class="row justify-content-center mt-4">
-        <a href="#" class="btnCustom_hover me-lg-4" style="width: 216px;">瞭解更多咖啡好處</a>
-        <a href="#" class="btnCustom d-none d-lg-block" style="width: 236px;">來去找jojo學手沖</a>
+        <div class="row justify-content-center mt-4">
+          <a href="#" class="btnCustom_hover me-lg-4" style="width: 216px;">瞭解更多咖啡好處</a>
+          <a href="#" class="btnCustom d-none d-lg-block" style="width: 236px;">來去找jojo學手沖</a>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- section3 -->
   <section class="mb-6">
     <div class="container">
       <div class="text-center mb-5">
@@ -218,7 +236,6 @@
   </footer>
 
 
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
     crossorigin="anonymous"></script>
@@ -231,23 +248,19 @@
     // a-link disabled
     const aLink = document.querySelectorAll('a')
     aLink.forEach((i) => i.addEventListener('click', (e) => e.preventDefault()))
-  </script>
 
-  <!-- <script>
-    // 進入前保存 scroll 位置
+    // html修改後保持live server瀏覽位置
     window.addEventListener('beforeunload', () => {
       localStorage.setItem('scrollY', window.scrollY);
     });
 
-    // 頁面重新載入後恢復 scroll 位置
     window.addEventListener('load', () => {
       const scrollY = localStorage.getItem('scrollY');
       if (scrollY !== null) {
         window.scrollTo(0, parseInt(scrollY, 10));
       }
     });
-  </script> -->
-
+  </script>
 </body>
 
 </html>

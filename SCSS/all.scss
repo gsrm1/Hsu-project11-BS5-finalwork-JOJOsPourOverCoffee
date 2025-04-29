@@ -46,12 +46,12 @@
 @import "../node_modules/bootstrap/scss/utilities/api";
 
 // custom
-@import "./components/logo";
-@import "./components/_header";
-@import "./components/fixedLogo";
-@import "./components/_font-kalamBold";
-@import "./components/navbar_switch";
-@import "./components/bg-img_switch";
-@import "./components/btnCustom";
-@import "./components/card-textTruncate";
-@import "./components/imageChange_hover";
+@import "./components/home/logo";
+@import "./components/home/header";
+@import "./components/home/fixedLogo";
+@import "./components/home/font-kalamBold";
+@import "./components/home/navbar_switch";
+@import "./components/home/bg-img_switch";
+@import "./components/home/btnCustom";
+@import "./components/home/card-textTruncate";
+@import "./components/home/imageChange_hover";

@@ -1,3 +1,24 @@
+//section2
+.img-overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: 1.5rem;
+  background-image: linear-gradient(180deg, #00000000 0%, #0000005D 100%);
+  opacity: 0;
+  // text position
+  color: #FFFFFF;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+//section3
 .linkStretched {
   text-decoration: none;
 
