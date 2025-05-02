@@ -8,8 +8,8 @@
   <meta property="og:title" content="Jojo咖啡學 | Jojo's Cafe">
   <meta property="og:description" content="3天學會專屬你的DIY咖啡手沖">
   <!-- header bg-image預載 -->
-  <link rel="preload" href="images/home.png" as="image">
-  <link rel="preload" href="images/home-mobile.jpg" as="image">
+  <link rel="preload" href="images/knowledge.png" as="image">
+  <link rel="preload" href="images/knowledge-mobile.png" as="image">
   <!-- Facebook Open Graph 標籤 -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://gsrm1.github.io/Hsu-project11-BS5-finalwork-JOJOsPourOverCoffee/layout.html">
@@ -33,17 +33,14 @@
       font-family: 'Noto Sans TC', sans-serif, 'Kalam', cursive;
     }
   </style>
-  <!-- section bg-image預載 -->
-  <link rel="preload" href="images/fixedLogo_hover.png" as="image">
-  <link rel="preload" href="images/making coffee while camping2.png" as="image">
-  <link rel="preload" href="images/hario V60 hand brewing method2.png" as="image">
-  <link rel="preload" href="images/coffee Brewing Notebook2.png" as="image">
 
 </head>
 
 <body>
-  <a href="purchase.html"><div id="fixedLogo" class="fixedLogo me-5 mb-5 d-none d-lg-block" data-bs-toggle="tooltip" data-bs-placement="top"
-    data-bs-custom-class="custom-tooltip" data-bs-title="手刀購買jojo咖啡學！"></div></a>
+  <a href="purchase.html">
+    <div id="fixedLogo" class="fixedLogo me-5 mb-5 d-none d-lg-block" data-bs-toggle="tooltip" data-bs-placement="top"
+      data-bs-custom-class="custom-tooltip" data-bs-title="手刀購買jojo咖啡學！"></div>
+  </a>
   <nav class="navbar navbar-expand-lg bg-white fixed-top navbar_switch">
     <div class="container bg-white rounded-2">
       <h1 class="mb-0"><a class="navbar-brand logo" href="index.html">jojo咖啡學</a></h1>
@@ -86,11 +83,11 @@
         <div class="col-lg-3">
           <h3 class="kalamBold fs-4 mb-4 text-center text-lg-start">Category</h3>
           <ul class="list-unstyled d-flex flex-lg-column justify-content-evenly">
-            <li class="kalamBold-regular fs-5 mb-3"><a href="#" class="aLink" >All</a></li>
+            <li class="kalamBold-regular fs-5 mb-3"><a href="#" class="aLink">All</a></li>
             <li class="kalamBold-regular fs-5 mb-3"><a href="#" class="aLink">產地</a></li>
             <li class="kalamBold-regular fs-5 mb-3"><a href="#" class="aLink">烘焙度</a></li>
             <li class="kalamBold-regular fs-5 mb-3"><a href="#" class="aLink">處理法</a></li>
-            <li class="kalamBold-regular fs-5 mb-3"><a href="#" class="aLink" >居家杯測</a></li>
+            <li class="kalamBold-regular fs-5 mb-3"><a href="#" class="aLink">居家杯測</a></li>
           </ul>
         </div>
         <div class="col-lg-9">
@@ -109,7 +106,8 @@
             </div>
             <div class="col-6">
               <div class="position-relative">
-                <img src="./images/light roast.png" class="img-fluid rounded-4" alt="a cup of coffee and a coffee plant">
+                <img src="./images/light roast.png" class="img-fluid rounded-4"
+                  alt="a cup of coffee and a coffee plant">
                 <div class="img-overlay fs-3">淺烘焙- light roast</div>
               </div>
             </div>
@@ -159,7 +157,6 @@
     </div>
   </footer>
 
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
     crossorigin="anonymous"></script>
@@ -168,18 +165,6 @@
     // BS5 tooltip
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-
-    // html修改後保持live server瀏覽位置
-    window.addEventListener('beforeunload', () => {
-      localStorage.setItem('scrollY', window.scrollY);
-    });
-
-    window.addEventListener('load', () => {
-      const scrollY = localStorage.getItem('scrollY');
-      if (scrollY !== null) {
-        window.scrollTo(0, parseInt(scrollY, 10));
-      }
-    });
   </script>
 </body>
 
