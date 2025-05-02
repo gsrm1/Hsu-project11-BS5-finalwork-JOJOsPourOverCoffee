@@ -26,7 +26,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       color: #3A3A3A;
@@ -74,16 +74,63 @@
     </div>
   </nav>
 
+  <header class="header-knowledge d-flex justify-content-center mt-6 mb-5 mb-lg-5">
+    <div class="text-white mt-auto mb-auto d-lg-none">
+      <h2 class="position-relative display-4" style="font-family: 'Kalam', cursive; z-index: 10;">咖啡小知識</h2>
+    </div>
+  </header>
 
+  <section class="mb-6">
+    <div class="container">
+      <div class="row flex-column flex-lg-row">
+        <div class="col-lg-3">
+          <h3 class="kalamBold fs-4 mb-4 text-center text-lg-start">Category</h3>
+          <ul class="list-unstyled d-flex flex-lg-column justify-content-evenly">
+            <li class="kalamBold-regular fs-5 mb-3"><a href="#" class="aLink" >All</a></li>
+            <li class="kalamBold-regular fs-5 mb-3"><a href="#" class="aLink">產地</a></li>
+            <li class="kalamBold-regular fs-5 mb-3"><a href="#" class="aLink">烘焙度</a></li>
+            <li class="kalamBold-regular fs-5 mb-3"><a href="#" class="aLink">處理法</a></li>
+            <li class="kalamBold-regular fs-5 mb-3"><a href="#" class="aLink" >居家杯測</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-9">
+          <div class="row row-cols-lg-3 g-4 text-center">
+            <div class="col-6">
+              <div class="position-relative">
+                <img src="./images/brasil.png" class="img-fluid rounded-4" alt="brasil map">
+                <div class="img-overlay fs-3">第一大產國：巴西</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="position-relative">
+                <img src="./images/colombia.png" class="img-fluid rounded-4" alt="colombia map">
+                <div class="img-overlay fs-3">第二大產國：哥倫比亞</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="position-relative">
+                <img src="./images/light roast.png" class="img-fluid rounded-4" alt="a cup of coffee and a coffee plant">
+                <div class="img-overlay fs-3">淺烘焙- light roast</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="position-relative">
+                <img src="./images//medium roast.png" alt="" class="img-fluid rounded-4">
+                <div class="img-overlay fs-3">中度烘焙- medium roast</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="position-relative">
+                <img src="./images/dark roast.png" alt="" class="img-fluid rounded-4">
+                <div class="img-overlay fs-3">深烘焙- dark roast</div>
+              </div>
+            </div>
+          </div>
 
-  <!-- section1 -->
-  ...
-
-  <!-- section2 -->
-  ...
-
-  <!-- section3 -->
-  ...
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer class="border-primary border-2 border-top">
     <div class="container py-4">
@@ -121,10 +168,6 @@
     // BS5 tooltip
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-
-    // a-link disabled
-    // const aLink = document.querySelectorAll('a')
-    // aLink.forEach((i) => i.addEventListener('click', (e) => e.preventDefault()))
 
     // html修改後保持live server瀏覽位置
     window.addEventListener('beforeunload', () => {

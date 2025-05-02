@@ -3,7 +3,7 @@
   position: absolute;
   inset: 0;
   border-radius: 1.5rem;
-  background-image: linear-gradient(180deg, #00000000 0%, #0000005D 100%);
+  background-image: linear-gradient(180deg, #00000000 0%, #0000006D 100%);
   opacity: 0;
   // text position
   color: #FFFFFF;
@@ -28,45 +28,56 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    transition: background-image 0.3s ease;
+  }
+
+  // 各圖片預設狀態
+  .imageChange-1 {
     background-image: url("../../images/making coffee while camping.png");
   }
 
-  .imageChange2 {
-    width: auto;
-    height: 424px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+  .imageChange-2 {
     background-image: url("../../images/hario V60 hand brewing method.png");
   }
 
-  .imageChange3 {
-    width: auto;
-    height: 424px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+  .imageChange-3 {
     background-image: url("../../images/coffee Brewing Notebook.png");
   }
+  .imageChange-4 {
+    background-image: url("../../images/switch.png");
+  }
+  .imageChange-5 {
+    background-image: url("../../images/office.png");
+  }
+  .imageChange-6 {
+    background-image: url("../../images/equipment.png");
+  }
 
+  // Hover切換圖片
   &:hover {
+    .imageChange-1 {
+      background-image: url("../../images/making coffee while camping2.png");
+    }
+
+    .imageChange-2 {
+      background-image: url("../../images/hario V60 hand brewing method2.png");
+    }
+
+    .imageChange-3 {
+      background-image: url("../../images/coffee Brewing Notebook2.png");
+    }
+    .imageChange-4 {
+      background-image: url("../../images/switch2.png");
+    }
+    .imageChange-5 {
+      background-image: url("../../images/office2.png");
+    }
+    .imageChange-6 {
+      background-image: url("../../images/equipment2.png");
+    }
+
     .cardShadow_hover {
       box-shadow: 0rem .3rem .5rem .3rem rgba($primary, .7) !important;
-      transition: .3s;
-    }
-
-    .imageChange_hover {
-      background-image: url("../../images/making coffee while camping2.png");
-      transition: .3s;
-    }
-
-    .imageChange2_hover {
-      background-image: url("../../images/hario V60 hand brewing method2.png");
-      transition: .3s;
-    }
-
-    .imageChange3_hover {
-      background-image: url("../../images/coffee Brewing Notebook2.png");
       transition: .3s;
     }
 

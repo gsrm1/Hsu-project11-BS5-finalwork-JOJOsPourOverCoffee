@@ -74,16 +74,68 @@
     </div>
   </nav>
 
+  <header class="header-whydrinkCoffee d-flex justify-content-center mt-6 mb-5 mb-lg-6">
+    <div class="text-white mt-auto mb-auto d-lg-none">
+      <h2 class="position-relative display-4" style="font-family: 'Kalam', cursive; z-index: 10;">為何喝咖？</h2>
+    </div>
+  </header>
 
+  <section class="mb-5 mb-lg-6">
+    <div class="container">
+      <div class="row g-4 g-lg-6 mx-lg-4 flex-column flex-lg-row text-lg-center">
+        <div class="col">
+          <div class="row flex-lg-column h-100">
+            <div class="col-5 col-lg-auto position-relative">
+              <img src="./images/knowledge1 .png" class="img-fluid rounded-circle mb-3" alt="a person is drinking coffee">
+            </div>
+            <div class="col col-lg-auto">
+              <h3 class="fs-5 kalamBold text-primary">優點1</h3>
+              <h4 class="fs-5">適時適量飲用黑咖啡促進身體健康</h4>
+              <p>推薦早晨(凌晨4點~中午12點)適量飲用，有助降低心血管疾病風險與間接降低全因死亡率</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row flex-lg-column h-100">
+            <div class="col-5 col-lg-auto position-relative">
+              <img src="./images/knowledge2.png" class="img-fluid rounded-circle mb-3" alt="a person is drinking coffee">
+            </div>
+            <div class="col col-lg-auto">
+              <h3 class="fs-5 kalamBold text-primary">優點2</h3>
+              <h4 class="fs-5">維持上班/學習專注力</h4>
+              <p>攝取咖啡後血液中咖啡因半衰期約2.5hr~4.5hr，開始工作/學習前15分鐘飲用有助專注</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row flex-lg-column">
+            <div class="col-5 col-lg-auto position-relative">
+              <img src="./images/knowledge3.png" class="img-fluid rounded-circle mb-3" alt="a cup of coffee and a coffee plant">
+            </div>
+            <div class="col col-lg-auto">
+              <h3 class="fs-5 kalamBold text-primary">優點3</h3>
+              <h4 class="fs-5">淺焙豆含有較多綠原酸</h4>
+              <p>綠原酸對於心血管、糖尿病、減重皆有正面助益，黑咖啡不加奶效果更佳</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row flex-lg-column">
+            <div class="col-5 col-lg-auto position-relative">
+              <img src="./images/knowledge4.png" alt="" class="img-fluid rounded-circle mb-3">
+            </div>
+            <div class="col col-lg-auto">
+              <h3 class="fs-5 kalamBold text-primary">優點4</h3>
+              <h4 class="fs-5">小確幸提升生活品質</h4>
+              <p>咖啡沖煮本身具有絕佳的儀式感，微調手法能獲取更多樂趣，為你的生活增添更多風采</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- section1 -->
-  ...
-
-  <!-- section2 -->
-  ...
-
-  <!-- section3 -->
-  ...
+  
 
   <footer class="border-primary border-2 border-top">
     <div class="container py-4">
@@ -121,10 +173,6 @@
     // BS5 tooltip
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-
-    // a-link disabled
-    // const aLink = document.querySelectorAll('a')
-    // aLink.forEach((i) => i.addEventListener('click', (e) => e.preventDefault()))
 
     // html修改後保持live server瀏覽位置
     window.addEventListener('beforeunload', () => {

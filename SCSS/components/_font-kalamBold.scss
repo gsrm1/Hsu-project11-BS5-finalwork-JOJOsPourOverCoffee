@@ -1,0 +1,9 @@
+.kalamBold {
+  font-family: 'Kalam', cursive;
+  font-weight: bold;
+  &-regular {
+    font-family: 'Kalam', cursive;
+    font-weight: normal;
+    list-style: none;
+  }
+}

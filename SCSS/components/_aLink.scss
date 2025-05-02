@@ -1,0 +1,35 @@
+.aLink {
+  position: relative;
+  color: $secondary;
+  text-decoration: none;
+  transition: .3s;
+
+  &::before {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    content: "－";
+    display: none;
+
+  }
+
+  &:hover {
+    color: $primary;
+    padding-left: 25px;
+
+    &::before {
+      display: inline-block;
+    }
+
+    @media (max-width: 991px) {
+      padding-left: 0;
+
+      &::before {
+        display: none;
+      }
+    }
+
+  }
+
+
+}

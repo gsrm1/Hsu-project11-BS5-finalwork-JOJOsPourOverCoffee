@@ -1,0 +1,106 @@
+.header {
+  max-width: 1440px;
+  height: 810px;
+  margin: 0 auto;
+  background-image: url("../../images/home.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.2;
+  }
+
+  @media (max-width: 991px) {
+    height: 635px;
+    background-size: cover;
+    background-image: url("../../images/home-mobile.jpg");
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &-knowledge {
+    max-width: 1440px;
+    height: 500px;
+    margin: 0 auto;
+    background-image: url("../../images/knowledge.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @media (max-width: 991px) {
+      height: 393px;
+      background-size: cover;
+      background-image: url("../../images/knowledge-mobile.png");
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        background-color: black;
+        opacity: 0.2;
+      }
+    }
+
+  }
+
+  &-whydrinkCoffee {
+    max-width: 1440px;
+    height: 500px;
+    margin: 0 auto;
+    background-image: url("../../images/whyDrinkCoffee.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @media (max-width: 991px) {
+      height: 393px;
+      background-size: cover;
+      background-image: url("../../images/whyDrinkCoffee-mobile.png");
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        background-color: black;
+        opacity: 0.4;
+      }
+    }
+  }
+
+  &-purchase {
+    max-width: 1440px;
+    height: 500px;
+    margin: 0 auto;
+    background-image: url("../../images/purchase.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @media (max-width: 991px) {
+      height: 393px;
+      background-size: cover;
+      background-image: url("../../images//purchase-mobile.png");
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        background-color: black;
+        opacity: 0.4;
+      }
+    }
+  }
+}
+
