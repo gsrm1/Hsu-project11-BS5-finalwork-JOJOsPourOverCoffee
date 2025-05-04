@@ -7,9 +7,6 @@
   <title>Jojo咖啡學 | Jojo's Cafe</title>
   <meta property="og:title" content="Jojo咖啡學 | Jojo's Cafe">
   <meta property="og:description" content="3天學會專屬你的DIY咖啡手沖">
-  <!-- header bg-image預載 -->
-  <!-- <link rel="preload" href="images/home.png" as="image">
-  <link rel="preload" href="images/home-mobile.jpg" as="image"> -->
   <!-- Facebook Open Graph 標籤 -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://gsrm1.github.io/Hsu-project11-BS5-finalwork-JOJOsPourOverCoffee/layout.html">
@@ -34,10 +31,13 @@
     }
   </style>
   <!-- section bg-image預載 -->
-  <!-- <link rel="preload" href="images/fixedLogo_hover.png" as="image">
+  <link rel="preload" href="images/fixedLogo_hover.png" as="image">
   <link rel="preload" href="images/making coffee while camping2.png" as="image">
   <link rel="preload" href="images/hario V60 hand brewing method2.png" as="image">
-  <link rel="preload" href="images/coffee Brewing Notebook2.png" as="image"> -->
+  <link rel="preload" href="images/coffee Brewing Notebook2.png" as="image">
+  <link rel="preload" href="images/switch2.png" as="image">
+  <link rel="preload" href="images/office2.png" as="image">
+  <link rel="preload" href="images/equipment2.png" as="image">
 
 </head>
 
@@ -76,14 +76,57 @@
     </div>
   </nav>
 
-  <!-- section1 -->
-  ...
+  <section class="mt-9 mb-5">
+    <div class="container">
+      <div class="text-center">
+        <img src="./images/pourOver coffee is easy.png" alt="Hand brewed coffee set" class="rounded-3 mb-4 img-fluid">
+      </div>
 
-  <!-- section2 -->
-  ...
+      <a href="DIY.html" class="btn btn-outline-secondary mb-3" style="text-decoration: none;"><i
+          class="bi bi-arrow-return-left"></i> 回DIY主頁</a>
 
-  <!-- section3 -->
-  ...
+      <div class="row row-cols-1 g-lg-4 gy-5">
+        <div class="col col-lg-8">
+          <div class="card rounded-3 border-0 shadow p-3 p-lg-4">
+            <div class="card-body p-0">
+              <h5 class="card-title fs-4 fw-bold mb-4">露營沖咖啡使樂趣加倍</h5>
+              <div class="row row-cols-2 mb-3 gy-2">
+                <div class="col">濾杯 | 折疊式鋼網濾杯、耐熱橡膠濾杯</div>
+                <div class="col">下壺 | 小型帶刻度者</div>
+                <div class="col">磨豆機 | 便攜手搖式磨豆機</div>
+                <div class="col">手沖壺 | 可直火小型手沖壺</div>
+                <div class="col">豆袋 | 事先秤好重量並依露營日數分裝</div>
+                <div class="col">咖啡秤 | N/A</div>
+              </div>
+              <p class="card-text mb-4">作法：文案構思中... This is a card with supporting text below as a natural
+                lead-in to additional content. This card has even longer content than the first to show that equal
+                height action rst to show that equal
+                height action.</p>
+            </div>
+            <img src="./images/making coffee while camping3.png" alt="camping coffee equipments"
+              class="rounded-3 img-fluid">
+          </div>
+        </div>
+        <div class="col col-lg-4">
+          <div class="card border-0 rounded-4 shadow">
+            <img src="./images/making coffee while camping.png" alt="making coffee while camping"
+              class="img-fluid card-img-top">
+            <div class="card-body p-4">
+              <h5 class="card-title fs-6 fw-bold">目標</h5>
+              <p class="card-text">裝備輕量化，同時製作好品質的手沖咖啡</p>
+              <h5 class="card-title fs-6 fw-bold">重點</h5>
+              <p class="card-text">選購登山等級裝備(輕量+小型化)</p>
+              <h5 class="card-title fs-6 fw-bold">基本花費</h5>
+              <p class="card-text">約3XXX元</p>
+              <div class="bg-white text-center">
+                <a href="purchase.html" class="btnCustom d-block">瞭解更多細節</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer class="border-primary border-2 border-top">
     <div class="container py-4">
@@ -120,22 +163,6 @@
     // BS5 tooltip
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-
-    // a-link disabled
-    // const aLink = document.querySelectorAll('a')
-    // aLink.forEach((i) => i.addEventListener('click', (e) => e.preventDefault()))
-
-    // html修改後保持live server瀏覽位置
-    // window.addEventListener('beforeunload', () => {
-    //   localStorage.setItem('scrollY', window.scrollY);
-    // });
-
-    // window.addEventListener('load', () => {
-    //   const scrollY = localStorage.getItem('scrollY');
-    //   if (scrollY !== null) {
-    //     window.scrollTo(0, parseInt(scrollY, 10));
-    //   }
-    // });
   </script>
 </body>
 

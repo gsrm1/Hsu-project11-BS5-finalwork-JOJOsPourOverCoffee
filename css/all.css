@@ -15829,7 +15829,7 @@ textarea.form-control-lg {
   top: 0;
   bottom: 0;
   background-color: black;
-  opacity: 0.2;
+  opacity: 0.3;
 }
 @media (max-width: 991px) {
   .header {
@@ -15863,7 +15863,7 @@ textarea.form-control-lg {
     top: 0;
     bottom: 0;
     background-color: black;
-    opacity: 0.2;
+    opacity: 0.4;
   }
 }
 .header-whydrinkCoffee {
