@@ -1,4 +1,4 @@
-//darkMode
+// darkMode
 const html = document.querySelector('html');
 const darkModeBtn = document.querySelector('#darkMode_switch');
 
@@ -26,24 +26,42 @@ darkModeBtn.addEventListener('click', function (e) {
 });
 
 // navbarToggleActive
-const locationUrl = location.pathname
-const paginationIndex = document.querySelector('nav .index')
-const paginationWhyDrinkCoffee = document.querySelector('nav .whyDrinkCoffee')
-const paginationKnowledge = document.querySelector('nav .knowledge')
-const paginationDIY = document.querySelector('nav .DIY')
-const paginationPurchase = document.querySelector('nav .purchase')
+const aLinks = document.querySelectorAll('a')
+const navBarIndex = document.querySelectorAll('nav .index')
+const navBarwhyDrinkCoffee = document.querySelector('nav .whyDrinkCoffee')
+const navBarknowledge = document.querySelector('nav .knowledge')
+const navBarDIY = document.querySelector('nav .DIY')
+const navBarPurchase = document.querySelector('nav .purchase')
 
 document.addEventListener('DOMContentLoaded', () => {
-  console.log(locationUrl)
-  if (locationUrl === '/index.html') {
-    paginationIndex.classList.add('active')
-  } else if (locationUrl === '/whyDrinkCoffee.html') {
-    paginationWhyDrinkCoffee.classList.add('active')
-  } else if (locationUrl === '/knowledge.html') {
-    paginationKnowledge.classList.add('active')
-  } else if (locationUrl === '/purchase.html') {
-    paginationPurchase.classList.add('active')
-  } else if (locationUrl === '/DIY.html' || '/DIYdetail-1.html') {
-    paginationDIY.classList.add('active')
+  const savedClickedLink = localStorage.getItem('navBarActive')
+  if (savedClickedLink === 'index') {
+    navBarIndex.forEach(item => item.classList.add('active'))
+  } else if (savedClickedLink === 'whyDrinkCoffee') {
+    navBarwhyDrinkCoffee.classList.add('active')
+  } else if (savedClickedLink === 'knowledge') {
+    navBarknowledge.classList.add('active')
+  } else if (savedClickedLink === 'DIY') {
+    navBarDIY.classList.add('active')
+  } else if (savedClickedLink === 'purchase') {
+    navBarPurchase.classList.add('active')
   }
+  console.log(localStorage)
+})
+
+aLinks.forEach(function (item) {
+  item.addEventListener('click', function (e) {
+    if (item.getAttribute('href') === 'index.html') {
+      localStorage.setItem('navBarActive', 'index')
+    } else if (item.getAttribute('href') === 'whyDrinkCoffee.html') {
+      localStorage.setItem('navBarActive', 'whyDrinkCoffee')
+    } else if (item.getAttribute('href') === 'knowledge.html') {
+      localStorage.setItem('navBarActive', 'knowledge')
+    } else if (item.getAttribute('href') === 'DIY.html') {
+      localStorage.setItem('navBarActive', 'DIY')
+    } else if (item.getAttribute('href') === 'purchase.html') {
+      localStorage.setItem('navBarActive', 'purchase')
+    }
+
+  })
 })
