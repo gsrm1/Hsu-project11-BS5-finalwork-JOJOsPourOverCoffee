@@ -34,6 +34,7 @@ const paginationDIY = document.querySelector('nav .DIY')
 const paginationPurchase = document.querySelector('nav .purchase')
 
 document.addEventListener('DOMContentLoaded', () => {
+  console.log(locationUrl)
   if (locationUrl === '/index.html') {
     paginationIndex.classList.add('active')
   } else if (locationUrl === '/whyDrinkCoffee.html') {
