@@ -2,6 +2,7 @@
   max-width: 1440px;
   height: 810px;
   margin: 0 auto;
+  margin-top: 84px;
   background-image: url("../../images/home.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -19,6 +20,7 @@
 
   @media (max-width: 991px) {
     height: 635px;
+    margin-top: 73px;
     background-size: cover;
     background-image: url("../../images/home-mobile.jpg");
 
@@ -31,15 +33,18 @@
     max-width: 1440px;
     height: 500px;
     margin: 0 auto;
+    margin-top: 84px;
     background-image: url("../../images/knowledge.png");
     background-repeat: no-repeat;
     background-position: center center;
 
     @media (max-width: 991px) {
       height: 393px;
+      margin-top: 73px;
       background-size: cover;
       background-image: url("../../images/knowledge-mobile.png");
       position: relative;
+
       &::after {
         position: absolute;
         content: "";
@@ -57,15 +62,18 @@
     max-width: 1440px;
     height: 500px;
     margin: 0 auto;
+    margin-top: 84px;
     background-image: url("../../images/whyDrinkCoffee.png");
     background-repeat: no-repeat;
     background-position: center center;
 
     @media (max-width: 991px) {
       height: 393px;
+      margin-top: 73px;
       background-size: cover;
       background-image: url("../../images/whyDrinkCoffee-mobile.png");
       position: relative;
+
       &::after {
         position: absolute;
         content: "";
@@ -82,15 +90,18 @@
     max-width: 1440px;
     height: 500px;
     margin: 0 auto;
+    margin-top: 84px;
     background-image: url("../../images/purchase.png");
     background-repeat: no-repeat;
     background-position: center center;
 
     @media (max-width: 991px) {
       height: 393px;
+      margin-top: 73px;
       background-size: cover;
       background-image: url("../../images//purchase-mobile.png");
       position: relative;
+
       &::after {
         position: absolute;
         content: "";
@@ -103,4 +114,3 @@
     }
   }
 }
-

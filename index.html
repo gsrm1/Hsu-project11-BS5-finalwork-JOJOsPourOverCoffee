@@ -20,6 +20,15 @@
     href="https://gsrm1.github.io/Hsu-project11-BS5-finalwork-JOJOsPourOverCoffee/images/favicon-32x32.png">
   <link rel="bookmark"
     href="https://gsrm1.github.io/Hsu-project11-BS5-finalwork-JOJOsPourOverCoffee/images/favicon-32x32.png">
+  <!-- darkMode預先載入避免切換頁面時閃爍-->
+  <script>
+    (function () {
+      const theme = localStorage.getItem('theme');
+      if (theme === 'dark') {
+        document.documentElement.classList.add('darkMode');
+      }
+    })();
+  </script>
   <!-- CSS、fonts載入 -->
   <link rel="stylesheet" href="./dist/style/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -48,7 +57,6 @@
   <link rel="preload" href="images/knowledge-mobile.png" as="image">
   <link rel="preload" href="images/purchase.png" as="image">
   <link rel="preload" href="images/purchase-mobile.png" as="image">
-
 </head>
 
 <body>
@@ -56,7 +64,7 @@
     <div id="fixedLogo" class="fixedLogo me-5 mb-5 d-none d-lg-block" data-bs-toggle="tooltip" data-bs-placement="top"
       data-bs-custom-class="custom-tooltip" data-bs-title="手刀購買jojo咖啡學！"></div>
   </a>
-  <nav class="navbar navbar-expand-lg bg-white fixed-top navbar_switch">
+  <nav class="navbar navbar-expand-lg bg-white fixed-top py-3 navbar_switch">
     <div class="container bg-white rounded-2">
       <h1 class="mb-0"><a class="navbar-brand logo" href="index.html">jojo咖啡學</a></h1>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -65,20 +73,23 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item me-5 mt-3 mt-lg-0 mb-2 mb-lg-0">
-            <a class="nav-link" aria-current="page" href="index.html">首頁</a>
+          <li class="nav-item me-4 mt-3 mt-lg-0 mb-2 mb-lg-0">
+            <a class="nav-link btn bg-dark text-white" aria-current="page" href="#" id="darkMode_switch"></a>
           </li>
-          <li class="nav-item me-5 mb-2 mb-lg-0">
-            <a class="nav-link" href="whyDrinkCoffee.html">為何喝咖</a>
+          <li class="nav-item me-4 mb-2 mb-lg-0">
+            <a class="nav-link index" href="index.html">首頁</a>
           </li>
-          <li class="nav-item me-5 mb-2 mb-lg-0">
-            <a class="nav-link " href="knowledge.html">咖啡小知識</a>
+          <li class="nav-item me-4 mb-2 mb-lg-0">
+            <a class="nav-link whyDrinkCoffee" href="whyDrinkCoffee.html">為何喝咖?</a>
           </li>
-          <li class="nav-item me-5 mb-3 mb-lg-0">
-            <a class="nav-link" href="DIY.html">DIY手沖好簡單</a>
+          <li class="nav-item me-4 mb-2 mb-lg-0">
+            <a class="nav-link knowledge" href="knowledge.html">咖啡小知識</a>
+          </li>
+          <li class="nav-item me-4 mb-3 mb-lg-0">
+            <a class="nav-link DIY" href="DIY.html">DIY手沖好簡單</a>
           </li>
           <li class="nav-item mb-2 mb-lg-0">
-            <a class="nav-link text-center lh-sm rounded-pill bg-primary buy-btn_hover" href="purchase.html"
+            <a class="nav-link text-center lh-sm rounded-pill bg-primary buy-btn_hover purchase" href="purchase.html"
               style="width: 176px; height: 38px;">購買jojo咖啡學</a>
           </li>
         </ul>
@@ -86,7 +97,7 @@
     </div>
   </nav>
 
-  <header class="header d-flex align-items-lg-center justify-content-center mt-5 mt-lg-6 mb-6">
+  <header class="header d-flex align-items-lg-center justify-content-center mb-5">
     <div class="text-white text-center d-none d-lg-block">
       <h2 class="position-relative display-4" style="font-family: 'Kalam', cursive; z-index: 10;">3天學會專屬你的DIY手沖</h2>
     </div>
@@ -102,7 +113,10 @@
             <h3 class="text-center text-lg-start lh-base kalamBold mb-4" style="font-size: 32px;">
               美國精品咖啡協會SCA<br class="d-block d-lg-none">咖啡證照 認證通過</h3>
             <p class="lh-lg">
-              jojo是個熱愛咖啡的攻城獅，學習前端之餘也自學手沖咖啡並於每日早晨享受手沖小確幸，手沖過程會紀錄沖煮參數，嘗試不同手法且加以品評調整。實作手沖咖啡是個探討科學的過程，為進一步精進沖煮技術自費考取國際級咖啡證照(jojo沒有要當咖啡師XD)。
+              jojo是個熱愛咖啡的攻城獅，學習前端之餘也自學手沖咖啡並於每日早晨享受手沖小確幸，手沖過程會紀錄沖煮參數，嘗試不同手法且加以品評調整。
+            </p>
+            <p class="lh-lg">
+              實作手沖咖啡是個探討科學的過程，為進一步精進沖煮技術自費考取國際級咖啡證照(jojo沒有要當咖啡師XD)。
             </p>
           </div>
         </div>
@@ -234,7 +248,7 @@
         <div class="d-lg-flex text-center align-items-center text-lg-start">
           <img src="./images/learn more about coffee.png" alt="a barista in comic style" class="me-3 mb-3">
           <div>
-            <h4>探討手沖奧秘</h4>
+            <h4>咖啡知識不嫌多</h4>
             <p>咖啡有趣的三兩事，等著你來尋寶！</p>
             <a href="knowledge.html" class="btnCustom_hover" style="width: 176px; display: inline-block;">探索咖啡知識</a>
           </div>
@@ -256,6 +270,8 @@
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
   </script>
+  <!-- darkMode與navbarToggleActice載入 -->
+  <script src="custom.js"></script>
 </body>
 
 </html>

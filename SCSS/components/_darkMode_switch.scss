@@ -1,0 +1,69 @@
+.darkMode body {
+  color: white;
+  background-color: #121212;
+  opacity: 86%;
+  transition: .3s;
+
+  a,
+  nav,
+  nav .container {
+    color: white;
+    background-color: #121212 !important;
+    transition: .3s;
+  }
+
+  .navbar-toggler,
+  #darkMode_switch,
+  .buy-btn_hover {
+    color: #121212 !important;
+    background-color: white !important;
+    transition: .3s;
+    &.active {
+      color: $primary !important;
+    }
+  }
+
+  .bg-img {
+    @media (max-width: 991px) {
+      background-color: #121212;
+    }
+  }
+
+  .purchaseCard {
+    background-color: $secondary;
+    transition: .3s;
+  }
+
+  .btnCustom {
+    color: #121212;
+    background-color: $primary !important;
+
+    &_hover {
+      font-size: 20px;
+      line-height: 42px;
+      text-align: center;
+      height: 44px;
+      color: #ffffff;
+      background-color: #fff;
+      border: 1px solid #ffffff;
+      border-radius: 50rem;
+      text-decoration: none;
+
+      &:hover {
+        color: #121212;
+        border-color: $primary;
+        background-color: $primary !important;
+      }
+    }
+  }
+
+  .diyBtn {
+    border: 1px solid #ffff;
+
+    &:hover {
+      color: #121212;
+      background-color: #fff !important;
+    }
+  }
+
+}
