@@ -33,6 +33,7 @@ const navBarknowledge = document.querySelector('nav .knowledge')
 const navBarDIY = document.querySelector('nav .DIY')
 const navBarPurchase = document.querySelector('nav .purchase')
 
+
 document.addEventListener('DOMContentLoaded', () => {
   const savedClickedLink = localStorage.getItem('navBarActive')
   if (savedClickedLink === 'index') {

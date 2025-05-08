@@ -18,8 +18,10 @@
     color: #121212 !important;
     background-color: white !important;
     transition: .3s;
+
     &.active {
       color: $primary !important;
+      background-color: $secondary !important;
     }
   }
 
